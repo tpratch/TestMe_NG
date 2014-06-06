@@ -2,11 +2,11 @@ I don't quite work right. Fix me up!
 
 * Look for instructions in index.html
 * Fork me or clone me from: https://github.com/sshepard/TestMe_NG
-* For the non-AngularJS version of the test got to https://github.com/sshepard/TestMe_lite
+* For the non-AngularJS version of the test go to https://github.com/sshepard/TestMe_lite
 
 extra credit:
 * Mock a "good" or "bad" reply from the server.
-* Make another column that lists the selected checkboxes.
+* Make another column that lists the checkboxes as you select them (this kind of thing is helpful when there's a long list of checkboxes).
 * Use LESS/SASS, etc
 * Deploy the project with Grunt to a .tgz
 * Serve/Deploy with Yeoman.
