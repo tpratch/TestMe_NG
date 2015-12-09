@@ -6,7 +6,7 @@ function indexController($scope) {
     {
         "message": "Please make a selection!"},
     {   
-        "message": "Please make a selection!"},
+        "message": "Please choose more items!"},
     {
         "message": "The system is down!"
     }];
