@@ -1,5 +1,5 @@
 function indexController($scope, $http) {
-    
+    $scope.title = "Index Controller";
     var flaggedID = 3;
     $scope.errorMessages = [{
         "message": ""},
