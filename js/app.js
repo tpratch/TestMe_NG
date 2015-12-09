@@ -1,6 +1,6 @@
 var angular = angular;
 
-var app = angular.module('TestMe', ['ngRoute']);
+var app = angular.module('TestMe', ['ngRoute', 'ngResource']);
 
 
 app.config(function($routeProvider, $locationProvider) {

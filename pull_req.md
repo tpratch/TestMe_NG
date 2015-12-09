@@ -1,1 +1,0 @@
-Having spoken with a couple other developers, the consensus is that this is essentially a full unit of work. There may be better ways to test for proficiency without requesting that much time from a developer.

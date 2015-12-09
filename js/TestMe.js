@@ -96,16 +96,17 @@ function indexController($scope, $http) {
     $scope.processPage = function(){
         if($scope.validation()==true){
             if($scope.failServer){
-            $scope.system.message.status = $scope.errorMessages[3].message;
+                $scope.system.message.status = $scope.errorMessages[3].message;
             }else{
-            $http.get('js/mock.json')
+            /*$http.get('js/mock.json')
             .then(function(response) {
             console.log('Success', response);
                 //response.data
             }, function(error) {
             console.error('ERR', error);
                 $scope.system.message.status = $scope.errorMessages[3].message;
-            })
+            })*/
+            return true;
             }
         }
 
