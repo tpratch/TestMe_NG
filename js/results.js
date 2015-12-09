@@ -1,0 +1,2 @@
+function resultsController($scope, $http) {
+}

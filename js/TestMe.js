@@ -1,4 +1,4 @@
-function indexController($scope) {
+function indexController($scope, $http) {
     
     var flaggedID = 3;
     $scope.errorMessages = [{
@@ -98,7 +98,14 @@ function indexController($scope) {
             if($scope.failServer){
             $scope.system.message.status = $scope.errorMessages[3].message;
             }else{
-            //serviceCall.set(check);
+            $http.get('js/mock.json')
+            .then(function(response) {
+            console.log('Success', response);
+                //response.data
+            }, function(error) {
+            console.error('ERR', error);
+                $scope.system.message.status = $scope.errorMessages[3].message;
+            })
             }
         }
 

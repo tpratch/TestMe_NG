@@ -1,3 +1,4 @@
 var angular = angular;
 
-angular.module('TestMe', []);
+var app = angular.module('TestMe', []);
+
