@@ -1,0 +1,8 @@
+
+body{background:#EFF;color:#122;}
+h1 { color: #368; weight: bolder; margin: 20px; display: block; opacity: 80%; }
+h1:hover { opacity:1; }
+.well{border-radius:8px;background-color: #CDD;border-color:#356;}
+.fail, .status{color:#c00;}
+.ib{display:inline-block;*display:inline;}
+.message{background-color:#fcc;padding:1em;border:1px solid #900;border-radius:8px;}

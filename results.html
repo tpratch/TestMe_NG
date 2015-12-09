@@ -2,18 +2,23 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>TestMe_lite results!</title>
-	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<title>TestMe results!</title>
+  
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <!-- because no matter how great the temptation, you should actively avoid in-page and inline styling like the plague -->
+  <link rel="stylesheet" href='css/test.css'/> 
 	<!--[if IE 7]>
 	<script>
 		// Attach additional stylesheets and JS for ie.
-		//TODO: json3 not working??
-		document.createStyleSheet('/css/ie7.css');
-
+		//NOTE: I have no IE7 to test this with - I simply fixed the javascript to not use 'href' as an attribute, and variablized the head call
+		//With MS about to officially stop supporting IE<10 - it's probably not worth harping on these things. Or let's go the full monty
+		//Make this script work on Netscape 3.01 Gold (even though stylesheets don't)!
+		document.createStyleSheet('css/ie7.css');
+		var head = document.getElementsByTagName('head')[0];
 		var json3 = document.createElement('script');
 		json3.type = 'text/javascript';
-		json3.href = '/vendor/json3.js';
-		json3.appendChild(document.getElementsByTagName('head')[0]);
+		json3.src = '/vendor/json3.js';
+		head.appendChild(json3);
 	</script>
 	<![endif]-->
 	<script src="js/vendor/jquery.min.js"></script>
