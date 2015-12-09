@@ -78,7 +78,6 @@ function indexController($scope) {
                 $scope.checkedList.push(check.label);
             }
         });
-        //console.log($scope.checkedList);
         return answered;
     }
     $scope.validation = function(){
@@ -97,12 +96,9 @@ function indexController($scope) {
     $scope.processPage = function(){
         if($scope.validation()==true){
             if($scope.failServer){
-            console.error("server fale nao!");
             $scope.system.message.status = $scope.errorMessages[3].message;
             }else{
             //serviceCall.set(check);
-            console.log("clicked submit nao wut?");
-
             }
         }
 
